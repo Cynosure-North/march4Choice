@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="css.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400&family=Montserrat:wght@500;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<nav>
+		<a href="tips.html">Tips</a>
+		<a href="signs.html">Sign Ideas</a>
+		<a href="help.html">Get help</a>
+	</nav>
+	<div id="banner">
+		<img src="Images/temp.bmp">
+		<div id="text">
+			<h1><i>Stand up for freedom</i></h1>
+			<h1>Protests!</h1>
+		</div>
+	</div>
+	<div id="column">
+		<div id="video" class="row">
+			<iframe width="625" height="345" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="text">
+				<h2>Stand for Freedom</h2>
+				<p>Gather at Aro Park at 12:30pm.<br>
+					Marching to Parliament at 1pm</p>
+				<a href="#" class="button" style="padding: .667em 1.333em;">Learn more</a>
+			</div>
+		</div>
+		<div class="row">
+			<h2>Get ready to March for Choice<br>Saturday 3 december</h2>
+			<div class="text">
+				<p><b>The March for Choice is an important opportunity to come together in solidarity to stand for bodily autonomy; to stand for ongoing legal and safe abortion; to stand for freedom from discrimination.</b><br><br>
+				More than 10,000 people each year in Aotearoa choose to terminate their pregnancy, and that’s ok! There is nothing wrong with having an abortion. Countless reasons why somebody might do so exist and that is their decision entirely. The Negative impacts from stigma persist yet it is important to reinforce that those who choose an abortion are supported and understood.<br><br> 
+				Fortunately in Aotearoa abortion is free for those eligible for public healthcare, and services and support are available for instances of unwanted pregnancy or for anyone pregnant and undecided. Let's keep it that way.<br><br>
+				<i>You’d be forgiven for thinking that all has been lost…</i><br><br>
+				<b>… but don’t give up! You are part of a global movement that’s winning!</b></p>
+				<a class="button" href="#" style="padding: 6.338px 18.662px 8.338px 18.662px">Resources</a>
+
+				<h3>Here's how to get involved:</h3>
+				<ul>
+					<li>Make a plan to be in Wellington for the march on 3 December.</li>
+					<li>Spread the word and invite all your family, friends, and colleagues to participate!</li>
+					<li>More!</li>
+				</ul>
+			</div>
+		</div>
+		<div id="links" class="row">
+			<a href="help.html"><img src="Images/want-to-help.webp"></a>
+			<a href="#"><img src="Images/transport.webp"></a>
+			<a href="#"><img src="Images/tips-for-marchers.webp"></a>
+			<a href="#"><img src="Images/sign-ideas.webp"></a>
+		</div>
+	</div>
+	<div id="gradient" class="row">
+		<div></div>
+		<div>
+			<h4>13,246</h4>
+			<p>Mother's lives saved in 2020</p>
+		</div>
+		<div>
+			<h4>36</h4>
+			<p>foetuses</p>
+		</div>
+		<div>
+			<h4>It would be</h4>
+			<p>very disingenuous to say abortion is murder</p>
+		</div>
+		<div></div>
+	</div>
+	<div id="countdown">
+		<b><h1 id="days">1</h1></b><p id="days-text">Days</p>
+		<div class="row">
+			<h4 id="hours">1</h4><p id="hours-text">Hours</p>
+			<h4 id="minutes">1</h4><p id="seconds-text">Minutes</p>
+			<h4 id="seconds">1</h4><p id="seconds-text">Seconds</p>
+		</div>
+		<p style="padding-bottom: 20px">until</p>
+		<h4 id="event">March for autonomy</h4>
+	</div>
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Dec 3, 2022 12:30:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	// Get today's date and time
+	var now = new Date().getTime();
+		
+	// Find the distance between now and the count down date
+	var distance = countDownDate - now;
+		
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+	// Output the result in an element with id="demo"
+	document.getElementById("days").innerHTML = days;
+	document.getElementById("hours").innerHTML = hours;
+	document.getElementById("minutes").innerHTML = minutes;
+	document.getElementById("seconds").innerHTML = seconds;
+		
+	// If the count down is over, write some text 
+	if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("demo").innerHTML = "EXPIRED";
+	}
+	}, 1000);
+	</script>
+	<footer>
+		<div class="row">
+			<div>
+				<h5>About the march</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices vitae auctor eu augue ut lectus.
+				</p>
+			</div>
+			<div>
+				<h5>Get Help</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices vitae auctor eu augue ut lectus.
+			</div>
+			<div>
+				<h5>Watch</h5>
+				<iframe width="320" height="180" src="https://www.youtube.com/embed/Efr_0_GEL-I" title="Crapshots Ep448 - The Cosmic Slam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</footer>
+</body>

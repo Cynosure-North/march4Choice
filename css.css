@@ -236,8 +236,24 @@ hr {
 	margin-top: 30px;
 }
 
+#signs img {
+	max-width: min(1000px, 96%);
+	margin: 0 auto;
+	display: block;
+	padding: 20px;
+}
 
-@media (max-width:800px ) {
+nav img {
+	float: left;
+}
+
+#logo {
+	position: absolute;
+	top: 45px;
+	left: 45px;
+}
+
+@media (max-width:900px ) {
 	.row { flex-direction: column; }
 	#countdown .row { flex-direction: row; }
 
@@ -257,6 +273,7 @@ hr {
 		width: 100%;
 	}
 
-	nav { text-align: center; padding-top: 50px; height: 90px; }
-	nav a { float: none;  padding-top: 30px;}
+	nav { text-align: center; padding-top: 170px; height: 70px; margin: 0 auto }
+	nav a { float: none;  padding-top: 50px; padding-bottom: 10px;}
+	#logo { left: calc(50% - 240px); margin : 0 auto; padding-top: 10px;}
 }
